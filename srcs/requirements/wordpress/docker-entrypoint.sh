@@ -43,7 +43,7 @@ if ! wp core is-installed --allow-root; then
     --allow-root
 fi
 
-if ! wp user get seconduser --allow-root >/dev/null 2>&1; then
+if ! wp user get $WP_SECOND_USER --allow-root >/dev/null 2>&1; then
   echo "[entrypoint] Creating second WordPress user..."
 
   wp user create $WP_SECOND_USER $WP_SECOND_EMAIL \
