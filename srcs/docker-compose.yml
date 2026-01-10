@@ -53,7 +53,7 @@ services:
 
   nginx:
     container_name: nginx
-    image: inception-nginx
+    image: nginx
     build:
       context: ./requirements/nginx
     pull_policy: build
