@@ -1,7 +1,7 @@
 services:
   mariadb:
     container_name: mariadb
-    image: inception-mariadb
+    image: mariadb
     build:
       context: ./requirements/mariadb
     pull_policy: build
@@ -23,7 +23,7 @@ services:
 
   wordpress:
     container_name: wordpress
-    image: inception-jordpress
+    image: wordpress
     build:
       context: ./requirements/wordpress
     pull_policy: build
